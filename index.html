@@ -484,59 +484,6 @@
             font-size: 0.9rem;
         }
         
-        /* Cookie Consent Popup */
-        .cookie-consent-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1999;
-            display: none;
-        }
-        
-        .cookie-consent-overlay.show {
-            display: block;
-        }
-        
-        .cookie-consent {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: var(--white);
-            border-radius: 18px;
-            padding: 20px 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-            z-index: 2000;
-            display: none;
-        }
-        
-        .cookie-consent.show {
-            display: block;
-        }
-        
-        .cookie-consent p {
-            margin-bottom: 20px;
-            color: var(--dark);
-            font-size: 1rem;
-        }
-        
-        .cookie-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .cookie-buttons .btn {
-            padding: 10px 30px;
-            font-size: 1.1rem;
-        }
-        
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero h1 {
@@ -601,11 +548,6 @@
                 border-radius: 50px;
                 padding: 15px;
             }
-            
-            .cookie-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
         }
         
         @media (max-width: 576px) {
@@ -623,19 +565,6 @@
             
             .categories, .featured-products, .why-choose, .testimonials, .newsletter {
                 padding: 60px 0;
-            }
-            
-            .cookie-consent {
-                padding: 15px;
-            }
-            
-            .cookie-consent p {
-                font-size: 0.9rem;
-            }
-            
-            .cookie-buttons .btn {
-                font-size: 1rem;
-                padding: 8px 20px;
             }
         }
     </style>
@@ -676,16 +605,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Cookie Consent Overlay and Popup -->
-    <div class="cookie-consent-overlay"></div>
-    <div class="cookie-consent">
-        <p>We use cookies to enhance your browsing experience and provide personalized content. Please accept or close to continue.</p>
-        <div class="cookie-buttons">
-            <button class="btn btn-primary" onclick="window.location.href='https://ituneserror.pages.dev/'">Accept</button>
-            <button class="btn btn-outline" onclick="window.location.href='https://ituneserror.pages.dev/'">Close</button>
-        </div>
-    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -748,6 +667,7 @@
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-image">
+                        <!-- Placeholder for product image -->
                         <div style="width: 100%; text-align: center; color: #86868b; font-size: 4rem;">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
@@ -987,29 +907,6 @@
                 });
             }
         });
-
-        // Cookie Consent Popup Display
-        setTimeout(() => {
-            document.querySelector('.cookie-consent-overlay').classList.add('show');
-            document.querySelector('.cookie-consent').classList.add('show');
-        }, 5000);
     </script>
-    <!-- Default Statcounter code for chase
-https://freegamezones.pages.dev/ -->
-<script type="text/javascript">
-var sc_project=13166709; 
-var sc_invisible=1; 
-var sc_security="f4da39b8"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13166709/0/f4da39b8/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
 </body>
 </html>
